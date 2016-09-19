@@ -1,7 +1,7 @@
 {
   "name": "m-input",
   "version": "1.0.0",
-  "description": "m-input 展示操作的当前进度",
+  "description": "m-input 输入框",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
