@@ -1,0 +1,41 @@
+{
+  "name": "m-input",
+  "version": "1.0.0",
+  "description": "m-input 展示操作的当前进度",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/59fe/m-input.git"
+  },
+  "homepage": "https://github.com/59fe/m-input",
+  "author": {
+    "name": "半边",
+    "email": "itaofe@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "半边",
+      "email": "itaofe@gmail.com"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/59fe/m-input/issues"
+  },
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "react": "~15.2.0",
+    "react-dom": "~15.2.0",
+    "m-base": "^1.0.0",
+    "classnames": "~2.2.3"
+  },
+  "keywords": [
+    "input",
+    "react",
+    "mobile"
+  ],
+  "license": "Apache-2.0"
+}
+
