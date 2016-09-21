@@ -1,0 +1,92 @@
+@import "~m-base/base/mixins";
+@import "~m-base/base/variables";
+
+// input
+
+.input {
+
+  &-box {
+    display: block;
+    width: 100%;
+    position: relative;
+    font-style: inherit;
+
+    > input, > textarea {
+      -webkit-appearance: none;
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      .placeholder(@N2_1);
+      color: @N2_4;
+      .font-size(@font-size-subhead);
+      .line-height(@S5);
+      box-shadow: none !important;
+      border-radius: 0 !important;
+      .min-height(@S11);
+
+      &:focus {
+        outline: none;
+      }
+
+      &:disabled, &[disabled] {
+        color: @N2_1;
+        border-color: @N1_6;
+        opacity: .9; // 部分浏览器会将disabled的元素设置透明度
+      }
+    }
+
+    > textarea {
+      resize: none;
+      .min-height(@S20);
+    }
+
+    > .fn-clear {
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: @N1_8;
+      .line-height(@S11);
+      .height(@S11);
+      .width(@S11);
+      text-align: center;
+    }
+
+    .text-counter {
+      display: block;
+      text-align: right;
+      color: @N2_1;
+      .font-size(@font-size-caption);
+      &.error {
+        color: @F1_1;
+      }
+    }
+
+    &.state-error > input {
+      border-color: @F1_1;
+    }
+
+    &.state-success > input {
+      border-color: @F3_1;
+    }
+
+    &.state-warning > input {
+      border-color: @F2_1;
+    }
+  }
+
+  &-bordered {
+    .border(1, @N1_7);
+    background-color: @N1_1;
+    .padding(@S3 - 1, @S2);
+    &:disabled, &[disabled] {
+      background-color: @N1_3;
+    }
+  }
+
+  &-line {
+    border: 0;
+    background: transparent;
+    .border-bottom(1, @N1_7);
+    .padding(@S3, @S1, @S3 - 1);
+  }
+}
