@@ -1,16 +1,16 @@
 {
-  "name": "m-input",
+  "name": "m-inputs",
   "version": "1.0.0",
-  "description": "m-input 输入框",
+  "description": "m-inputs 输入框",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/59fe/m-input.git"
+    "url": "https://github.com/59fe/m-inputs.git"
   },
-  "homepage": "https://github.com/59fe/m-input",
+  "homepage": "https://github.com/59fe/m-inputs",
   "author": {
     "name": "半边",
     "email": "itaofe@gmail.com"
@@ -22,7 +22,7 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/59fe/m-input/issues"
+    "url": "https://github.com/59fe/m-inputs/issues"
   },
   "readmeFilename": "README.md",
   "dependencies": {
@@ -32,7 +32,7 @@
     "classnames": "~2.2.3"
   },
   "keywords": [
-    "input",
+    "inputs",
     "react",
     "mobile"
   ],

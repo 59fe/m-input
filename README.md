@@ -1,4 +1,4 @@
-# m-input
+# m-inputs
 
 ---
 
@@ -36,7 +36,7 @@ onChange | 输入框的内容change事件 | Function |
 ---
 
 ```jsx
-import {FormItem, Input} from '@ali/msui-react';
+import {FormItem, Input} from 'npm_name';
 ReactDOM.render(
     <div>
         <FormItem>
@@ -71,7 +71,7 @@ ReactDOM.render(
 ---
 
 ```jsx
-import {FormItem, Input} from '@ali/msui-react';
+import {FormItem, Input} from 'npm_name';
 ReactDOM.render(
     <div>
         <FormItem>
@@ -103,7 +103,7 @@ ReactDOM.render(
 ---
 
 ```jsx
-import {FormItem, Input} from '@ali/msui-react';
+import {FormItem, Input} from 'npm_name';
 ReactDOM.render(
     <div>
         <FormItem>
@@ -141,7 +141,7 @@ ReactDOM.render(
 ---
 
 ```jsx
-import {FormItem, Input} from '@ali/msui-react';
+import {FormItem, Input} from 'npm_name';
 ReactDOM.render(
     <div>
         <FormItem>
