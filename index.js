@@ -11,6 +11,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _PropTypes = require('prop-types');
+
+var _PropTypes2 = _interopRequireDefault(_PropTypes);
+
 var _classnames = require('classnames');
 
 var _classnames2 = _interopRequireDefault(_classnames);
@@ -185,25 +189,18 @@ var Input = function (_Component) {
 }(_react.Component);
 
 Input.propTypes = {
-    type: _react.PropTypes.string, // bordered, line
-    state: _react.PropTypes.string, // error, success, warning 可扩展
+    type:         _PropTypes2.default.PropTypes.string, // bordered, line
+    state:        _PropTypes2.default.PropTypes.string, // error, success, warning 可扩展
+    htmlType:     _PropTypes2.default.PropTypes.oneOf(['text', 'password', 'textarea', 'number', 'search', 'email', 'url', 'color', 'date', 'month', 'week', 'time', 'datetime', 'datetime-local']), // input原生的类型
+    clearable:    _PropTypes2.default.PropTypes.bool,    // input的清除按钮,只有当htmlType不是textarea,并且不是disabled或readOnly的时候有效
+    counter:      _PropTypes2.default.PropTypes.bool,    // textarea的计数器,只有当htmlType是textarea的时候有效
+    defaultValue: _PropTypes2.default.PropTypes.string,
+    value:        _PropTypes2.default.PropTypes.string,
+    disabled:     _PropTypes2.default.PropTypes.bool,
+    readOnly:     _PropTypes2.default.PropTypes.bool,
+    onChange:     _PropTypes2.default.PropTypes.func,
 
-    // input原生的类型
-    htmlType: _react.PropTypes.oneOf(['text', 'password', 'textarea', 'number', 'search', 'email', 'url', 'color', 'date', 'month', 'week', 'time', 'datetime', 'datetime-local']),
-
-    // input的清除按钮,只有当htmlType不是textarea,并且不是disabled或readOnly的时候有效
-    clearable: _react.PropTypes.bool,
-
-    // textarea的计数器,只有当htmlType是textarea的时候有效
-    counter: _react.PropTypes.bool,
-
-    defaultValue: _react.PropTypes.string,
-    value: _react.PropTypes.string,
-    disabled: _react.PropTypes.bool,
-    readOnly: _react.PropTypes.bool,
-    onChange: _react.PropTypes.func,
-
-    __extraDOM: _react.PropTypes.node
+    __extraDOM:   _PropTypes2.default.PropTypes.node
 };
 
 Input.defaultProps = {
